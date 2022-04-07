@@ -40,27 +40,18 @@ namespace Projeto_M5
 
         }
 
-        public static void  inserir0()
-        {
-            int num 1;
-            dados[] novo = new dados[]
-            Console.WriteLine("Quantos livros quer introduzir?");
-            num = Int.Parse(Console.ReadLine());
-            //Ler valores para o Vetor
-            For(i = tam;i < (tam + num );i++)
-            {
-               8 
-
-            
-        }
-        
-        static dados [] dados 1 = new dados[100];  
-        static tam = 0;
 
         static void Main(string[] args)
         {
             //Declaração das variaveis 
             int num = 0, num1 = 1, num2 = 0;
+
+            int num 1;
+            dados[] novo = new dados[]
+            
+            
+            
+            
             
             //Introdução do primeiro valor
             Console.WriteLine("Bem vindo a biblioteca");
@@ -68,19 +59,12 @@ namespace Projeto_M5
             Console.WriteLine("****Menu****\n1 para adicionar uma obra\n2 para ver as informaçoes das obras\n3 Sair\n--------------------------------------");
             num = Convert.ToInt32(Console.ReadLine());
 
-
-            
-            
-            
-            
-            
-            
             Console.WriteLine("De que tipo quer introduzir: \n1 para ciências exatas\n2 para ciências humanas\n3 para ciências biomédicas");
             num2 = Convert.ToInt32(Console.ReadLine());
 
             case 1;
             Console.Clear();
-            addobra(); // dps criar uma funçao com este nome
+            addobra(); // depois criar uma funçao com este nome
             Console.WriteLine("Qualquer tecla para continuar");
             Console.ReadKey();
             Console.Clear();
@@ -88,7 +72,7 @@ namespace Projeto_M5
             
             case 2;
             Console.Clear();
-            Consultaobras(); // dps criar uma funçao com este nome
+            Consultaobras(); // depois criar uma funçao com este nome
             Console.WriteLine("Qualquer tecla para continuar");
             Console.ReadKey();
             Console.Clear();
@@ -114,27 +98,46 @@ namespace Projeto_M5
                    
                     if (num2 == 1)
                     {
-                        Console.WriteLine("Você escolheu Ciências exatas\nAgora Introduza as Informação");
-                        Console.WriteLine("Nome do Livro:");
+                        Console.WriteLine("Você escolheu Ciências exatas \n Agora Introduza as Informação");
+                        Console.WriteLine("Insira o nome do Livro:");
                         livrocienexata[i].Nome = Convert.ToString(Console.ReadLine());
-                        Console.WriteLine("\nNome do Autor:");
+                        Console.WriteLine(" Insira o nome do Autor:");
                         livrocienexata[i].Nomeautor = Convert.ToString(Console.ReadLine());
-                        Console.WriteLine("\nEditora:");
+                        Console.WriteLine("Insira o nome da editora:");
                         livrocienexata[i].Editora = Convert.ToString(Console.ReadLine());
-                        Console.WriteLine("\nCodigo do Livro");
-                        livrocienexata[i].Codigo = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Introduza o Numero de Paginas");
-                        livrocienexata[i].Npáginas = int.Parse(Console.ReadLine());
-
+                        Console.WriteLine(" Insira o código do Livro");
+                        livrocienexata[i].Codigo = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Introduza o Número de Paginas");
+                        livrocienexata[i].Npáginas = Convert.ToInt32(Console.ReadLine());
 
                     }
                     if (num2 == 2)
                     {
-                        //para ciências humanas
+                         Console.WriteLine("Você escolheu Ciências Humandas \n Agora Introduza as Informação");
+                        Console.WriteLine("Insira o nome do Livro:");
+                        livrocienexata[i].Nome = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine(" Insira o nome do Autor:");
+                        livrocienexata[i].Nomeautor = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine("Insira o nome da editora:");
+                        livrocienexata[i].Editora = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine(" Insira o código do Livro");
+                        livrocienexata[i].Codigo = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Introduza o Número de Paginas");
+                        livrocienexata[i].Npáginas = Convert.ToInt32(Console.ReadLine());
                     }
                     if (num2 == 3)
                     {
-                        //ciências biomédicas
+                        Console.WriteLine("Você escolheu Ciências Biométricas \n Agora Introduza as Informação");
+                        Console.WriteLine("Insira o nome do Livro:");
+                        livrocienexata[i].Nome = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine(" Insira o nome do Autor:");
+                        livrocienexata[i].Nomeautor = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine("Insira o nome da editora:");
+                        livrocienexata[i].Editora = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine(" Insira o código do Livro");
+                        livrocienexata[i].Codigo = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Introduza o Número de Paginas");
+                        livrocienexata[i].Npáginas = Convert.ToInt32(Console.ReadLine());
                     }
 
                 }
